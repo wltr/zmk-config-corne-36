@@ -25,13 +25,13 @@
 // |     |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |     |
 // |     |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  ;  |     |
 // |     |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  |     |
-// |                 | ESC | TAB | DEL |     | BSP | SPC | RET |                 |
+// |                 | TAB | BSPC|     |     |     | SPC | RET |                 |
 // -------------------------------------------------------------------------------
 bindings = <
   &trans &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &trans
   &trans &mt LCMD A &mt LALT S &mt LSHFT D &mt LCTRL F &kp G &kp H &mt RCTRL J &mt RSHFT K &mt RALT L &mt RCMD SEMI &trans
   &trans &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &trans
-  &kp ESC &kp TAB &lt 1 DEL &lt 2 BSPC &kp SPACE &kp RET
+  &kp TAB &lt 1 BSPC &trans &trans &lt 2 SPACE &kp RET
 >;
     };
     lower_layer {
@@ -39,13 +39,13 @@ bindings = <
 // |     |BRIUP| LTOG| LHUI| LSAI| LBRI|     | HOME| END | PGUP| PGDN|VOLUP|     |
 // |     |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |     |
 // |     |BRIDN| LEFF| LHUD| LSAD| LBRD|     | LFT | DWN |  UP | RGT |VOLDN|     |
-// |                 | ESC | TAB |     |     |     | SPC | RET |                 |
+// |                 | DEL |     |     |     |     |     | ESC |                 |
 // -------------------------------------------------------------------------------
 bindings = <
   &trans &kp C_BRI_UP &rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &kp HOME &kp END &kp PG_UP &kp PG_DN &kp C_VOL_UP &trans
   &trans &mt LCMD N1 &mt LALT N2 &mt LSHFT N3 &mt LCTRL N4 &kp N5 &kp N6 &mt RCTRL N7 &mt RSHFT N8 &mt RALT N9 &mt RCMD N0 &trans
   &trans &kp C_BRI_DN &rgb_ug RGB_EFF &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_VOL_DN &trans
-  &kp ESC &kp TAB &trans &trans &kp SPACE &kp RET
+  &kp DEL &trans &trans &trans &trans &kp ESC
 >;
     };
     raise_layer {
@@ -53,13 +53,13 @@ bindings = <
 // |     |  !  |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |     |
 // |     |  `  |  ~  |  '  |  "  | BOOT|     |  -  |  =  |  [  |  ]  |  \  |     |
 // |     | BT0 | BT1 | BT2 | BT3 | BTC |     |  _  |  +  |  {  |  }  | "|" |     |
-// |                 | ESC | TAB |     |     |     | SPC | RET |                 |
+// |                 | DEL |     |     |     |     |     | ESC |                 |
 // -------------------------------------------------------------------------------
 bindings = <
   &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
   &trans &mt LCMD GRAVE &mt LALT TILDE &mt LSHFT SQT &mt LCTRL DQT &bootloader &kp MINUS &mt RCTRL EQUAL &mt RSHFT LBKT &mt RALT RBKT &mt RCMD BSLH &trans
   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE &trans
-  &kp ESC &kp TAB &trans &trans &kp SPACE &kp RET
+  &kp DEL &trans &trans &trans &trans &kp ESC
 >;
     };
   };
