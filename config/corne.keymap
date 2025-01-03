@@ -9,14 +9,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&led_strip {
+  chain-length = <27>;
+};
+
 &mt {
   flavor = "tap-preferred";
   tapping-term-ms = <150>;
   quick-tap-ms = <150>;
 };
 
-&led_strip {
-  chain-length = <27>;
+&lt {
+  tapping-term-ms = <150>;
+  quick-tap-ms = <150>;
 };
 
 / {
