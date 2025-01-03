@@ -11,6 +11,8 @@
 
 &mt {
   flavor = "tap-preferred";
+  tapping-term-ms = <150>;
+  quick-tap-ms = <150>;
 };
 
 &led_strip {
@@ -29,7 +31,7 @@
 // -------------------------------------------------------------------------------
 bindings = <
   &trans &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &trans
-  &trans &kp A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G &kp H &mt RSHFT J &mt RCTRL K &mt RALT L &kp SEMI &trans
+  &trans &kp A &mt LALT S &mt LSHFT D &mt LCTRL F &kp G &kp H &mt RCTRL J &mt RSHFT K &mt RALT L &kp SEMI &trans
   &trans &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &trans
   &mt LCMD TAB &lt 1 BSPC &trans &trans &lt 2 SPACE &mt RCMD RET
 >;
@@ -43,7 +45,7 @@ bindings = <
 // -------------------------------------------------------------------------------
 bindings = <
   &trans &kp C_BRI_UP &rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &kp HOME &kp END &kp PG_UP &kp PG_DN &kp C_VOL_UP &trans
-  &trans &kp N1 &mt LALT N2 &mt LCTRL N3 &mt LSHFT N4 &kp N5 &kp N6 &mt RSHFT N7 &mt RCTRL N8 &mt RALT N9 &kp N0 &trans
+  &trans &kp N1 &mt LALT N2 &mt LSHFT N3 &mt LCTRL N4 &kp N5 &kp N6 &mt RCTRL N7 &mt RSHFT N8 &mt RALT N9 &kp N0 &trans
   &trans &kp C_BRI_DN &rgb_ug RGB_EFF &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_VOL_DN &trans
   &mt LCMD DEL &trans &trans &trans &trans &mt RCMD ESC
 >;
@@ -57,7 +59,7 @@ bindings = <
 // -------------------------------------------------------------------------------
 bindings = <
   &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
-  &trans &kp GRAVE &mt LALT TILDE &mt LCTRL SQT &mt LSHFT DQT &bt BT_CLR &kp MINUS &mt RSHFT EQUAL &mt RCTRL LBKT &mt RALT RBKT &kp BSLH &trans
+  &trans &kp GRAVE &mt LALT TILDE &mt LSHFT SQT &mt LCTRL DQT &bt BT_CLR &kp MINUS &mt RCTRL EQUAL &mt RSHFT LBKT &mt RALT RBKT &kp BSLH &trans
   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE &trans
   &mt LCMD DEL &trans &trans &trans &trans &mt RCMD ESC
 >;
