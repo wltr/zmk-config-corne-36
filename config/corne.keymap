@@ -27,35 +27,35 @@
 / {
   combos {
     compatible = "zmk,combos";
-    combo_lalt {
+    combo_lcmd {
       timeout-ms = <50>;
       key-positions = <2 3>;
-      bindings = <&kp LALT>;
+      bindings = <&kp LCMD>;
     };
     combo_lctrl {
       timeout-ms = <50>;
       key-positions = <14 15>;
       bindings = <&kp LCTRL>;
     };
-    combo_lcmd {
+    combo_lalt {
       timeout-ms = <50>;
       key-positions = <26 27>;
-      bindings = <&kp LCMD>;
+      bindings = <&kp LALT>;
     };
-    combo_ralt {
+    combo_rcmd {
       timeout-ms = <50>;
       key-positions = <8 9>;
-      bindings = <&kp RALT>;
+      bindings = <&kp RCMD>;
     };
     combo_rctrl {
       timeout-ms = <50>;
       key-positions = <20 21>;
       bindings = <&kp RCTRL>;
     };
-    combo_rcmd {
+    combo_ralt {
       timeout-ms = <50>;
       key-positions = <32 33>;
-      bindings = <&kp RCMD>;
+      bindings = <&kp RALT>;
     };
   };
 };
