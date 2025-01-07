@@ -30,42 +30,49 @@
     compatible = "zmk,combos";
     combo_lcmd {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <2 3>;
       bindings = <&kp LCMD>;
       layers = <0 1 2>;
     };
     combo_lctrl {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <14 15>;
       bindings = <&kp LCTRL>;
       layers = <0 1 2>;
     };
     combo_lalt {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <26 27>;
       bindings = <&kp LALT>;
       layers = <0 1 2>;
     };
     combo_rcmd {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <8 9>;
       bindings = <&kp RCMD>;
       layers = <0 1 2>;
     };
     combo_rctrl {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <20 21>;
       bindings = <&kp RCTRL>;
       layers = <0 1 2>;
     };
     combo_ralt {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <32 33>;
       bindings = <&kp RALT>;
       layers = <0 1 2>;
     };
     combo_mouse {
       timeout-ms = <50>;
+      require-prior-idle-ms = <100>;
       key-positions = <37 40>;
       bindings = <&tog 3>;
     };
